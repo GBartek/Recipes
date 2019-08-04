@@ -20,7 +20,7 @@
 		0AE44E5B22F74EFA00514466 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE44E5922F74EFA00514466 /* RxCocoa.framework */; };
 		0AE44E5C22F74EFA00514466 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE44E5A22F74EFA00514466 /* RxSwift.framework */; };
 		0AE44E6022F7531300514466 /* HomeMealItemsProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE44E5F22F7531300514466 /* HomeMealItemsProviding.swift */; };
-		0AE44E6222F759D200514466 /* DummyHomeMealItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE44E6122F759D200514466 /* DummyHomeMealItemProvider.swift */; };
+		0AE44E6422F7624D00514466 /* DummyHomeMealItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE44E6322F7624D00514466 /* DummyHomeMealItemProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 		0AE44E5922F74EFA00514466 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		0AE44E5A22F74EFA00514466 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		0AE44E5F22F7531300514466 /* HomeMealItemsProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMealItemsProviding.swift; sourceTree = "<group>"; };
-		0AE44E6122F759D200514466 /* DummyHomeMealItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyHomeMealItemProvider.swift; sourceTree = "<group>"; };
+		0AE44E6322F7624D00514466 /* DummyHomeMealItemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyHomeMealItemProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +148,7 @@
 				0AE44E5222F74A2700514466 /* HomeViewController.swift */,
 				0AE44E5622F74E7500514466 /* HomeViewModel.swift */,
 				0AE44E5F22F7531300514466 /* HomeMealItemsProviding.swift */,
-				0AE44E6122F759D200514466 /* DummyHomeMealItemProvider.swift */,
+				0AE44E6322F7624D00514466 /* DummyHomeMealItemProvider.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -288,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AE44E6222F759D200514466 /* DummyHomeMealItemProvider.swift in Sources */,
+				0AE44E6422F7624D00514466 /* DummyHomeMealItemProvider.swift in Sources */,
 				0AE44E5322F74A2700514466 /* HomeViewController.swift in Sources */,
 				0AE44E5722F74E7500514466 /* HomeViewModel.swift in Sources */,
 				0AE44E1722F72CAB00514466 /* AppDelegate.swift in Sources */,

@@ -15,7 +15,7 @@ struct HomeMealItemData: HomeMealItem {
     var imageName: String
 }
 
-struct DummyHomeMealItemProvider: HomeMealItemsProviding {
+struct DummyHomeMealItemsProvider: HomeMealItemsProviding {
     func fetchListOfHomeMeals() -> Observable<[HomeMealItem]> {
         return .deferred {
             let item1 = HomeMealItemData(title: "MINI PIZZE Z CUKINII",

@@ -24,7 +24,7 @@ final class HomeViewController: UITableViewController {
     // Maybe it would be possible to inject already configured view model from outside.
     // See here: https://useyourloaf.com/blog/better-storyboards-with-xcode-11/?fbclid=IwAR3zd3_M2gqDT6jI7Xb-YnFsjat2RI5T24vdWIHr6M-mITD7TrnGpHUZzEg
     private func setupViewModel() {
-        viewModel = HomeViewModel(provider: DummyHomeMealItemProvider())
+        viewModel = HomeViewModel(provider: DummyHomeMealItemsProvider())
         
         viewModel.outputs.items.bind(to: tableView.rx.items(cellIdentifier: cellReuseID)) { row, model, cell in
             cell.textLabel?.text = model.title
