@@ -16,6 +16,11 @@
 		0AE44E3D22F7306B00514466 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE44E3C22F7306B00514466 /* CoreDataManager.swift */; };
 		0AE44E3F22F7318800514466 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE44E3E22F7318800514466 /* Models.swift */; };
 		0AE44E5322F74A2700514466 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE44E5222F74A2700514466 /* HomeViewController.swift */; };
+		0AE44E5722F74E7500514466 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE44E5622F74E7500514466 /* HomeViewModel.swift */; };
+		0AE44E5B22F74EFA00514466 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE44E5922F74EFA00514466 /* RxCocoa.framework */; };
+		0AE44E5C22F74EFA00514466 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE44E5A22F74EFA00514466 /* RxSwift.framework */; };
+		0AE44E6022F7531300514466 /* HomeMealItemsProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE44E5F22F7531300514466 /* HomeMealItemsProviding.swift */; };
+		0AE44E6222F759D200514466 /* DummyHomeMealItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE44E6122F759D200514466 /* DummyHomeMealItemProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,11 @@
 		0AE44E3C22F7306B00514466 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		0AE44E3E22F7318800514466 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		0AE44E5222F74A2700514466 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0AE44E5622F74E7500514466 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0AE44E5922F74EFA00514466 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		0AE44E5A22F74EFA00514466 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		0AE44E5F22F7531300514466 /* HomeMealItemsProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMealItemsProviding.swift; sourceTree = "<group>"; };
+		0AE44E6122F759D200514466 /* DummyHomeMealItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyHomeMealItemProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE44E5B22F74EFA00514466 /* RxCocoa.framework in Frameworks */,
+				0AE44E5C22F74EFA00514466 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +80,7 @@
 				0AE44E1522F72CAB00514466 /* Recipes */,
 				0AE44E2D22F72CAD00514466 /* RecipesTests */,
 				0AE44E1422F72CAB00514466 /* Products */,
+				0AE44E5822F74EFA00514466 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,7 +98,7 @@
 			children = (
 				0AE44E5022F74A0300514466 /* UI */,
 				0AE44E3B22F7305B00514466 /* Storage */,
-				0AE44E3922F7302700514466 /* Models */,
+				0AE44E3922F7302700514466 /* API Models */,
 				0AE44E1622F72CAB00514466 /* AppDelegate.swift */,
 				0AE44E1A22F72CAB00514466 /* Main.storyboard */,
 				0AE44E2022F72CAD00514466 /* Assets.xcassets */,
@@ -105,12 +118,12 @@
 			path = RecipesTests;
 			sourceTree = "<group>";
 		};
-		0AE44E3922F7302700514466 /* Models */ = {
+		0AE44E3922F7302700514466 /* API Models */ = {
 			isa = PBXGroup;
 			children = (
 				0AE44E3E22F7318800514466 /* Models.swift */,
 			);
-			path = Models;
+			path = "API Models";
 			sourceTree = "<group>";
 		};
 		0AE44E3B22F7305B00514466 /* Storage */ = {
@@ -133,8 +146,20 @@
 			isa = PBXGroup;
 			children = (
 				0AE44E5222F74A2700514466 /* HomeViewController.swift */,
+				0AE44E5622F74E7500514466 /* HomeViewModel.swift */,
+				0AE44E5F22F7531300514466 /* HomeMealItemsProviding.swift */,
+				0AE44E6122F759D200514466 /* DummyHomeMealItemProvider.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		0AE44E5822F74EFA00514466 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AE44E5922F74EFA00514466 /* RxCocoa.framework */,
+				0AE44E5A22F74EFA00514466 /* RxSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +172,7 @@
 				0AE44E0F22F72CAB00514466 /* Sources */,
 				0AE44E1022F72CAB00514466 /* Frameworks */,
 				0AE44E1122F72CAB00514466 /* Resources */,
+				0AE44E5422F74BED00514466 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -233,13 +259,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AE44E5422F74BED00514466 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0AE44E0F22F72CAB00514466 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE44E6222F759D200514466 /* DummyHomeMealItemProvider.swift in Sources */,
 				0AE44E5322F74A2700514466 /* HomeViewController.swift in Sources */,
+				0AE44E5722F74E7500514466 /* HomeViewModel.swift in Sources */,
 				0AE44E1722F72CAB00514466 /* AppDelegate.swift in Sources */,
+				0AE44E6022F7531300514466 /* HomeMealItemsProviding.swift in Sources */,
 				0AE44E3F22F7318800514466 /* Models.swift in Sources */,
 				0AE44E3D22F7306B00514466 /* CoreDataManager.swift in Sources */,
 				0AE44E1F22F72CAB00514466 /* Recipes.xcdatamodeld in Sources */,
@@ -406,6 +459,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SKD5C9SLQ2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Recipes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -424,6 +481,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SKD5C9SLQ2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Recipes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
