@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0AE44E1722F72CAB00514466 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE44E1622F72CAB00514466 /* AppDelegate.swift */; };
-		0AE44E1922F72CAB00514466 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE44E1822F72CAB00514466 /* ViewController.swift */; };
 		0AE44E1C22F72CAB00514466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE44E1A22F72CAB00514466 /* Main.storyboard */; };
 		0AE44E1F22F72CAB00514466 /* Recipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AE44E1D22F72CAB00514466 /* Recipes.xcdatamodeld */; };
 		0AE44E2122F72CAD00514466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE44E2022F72CAD00514466 /* Assets.xcassets */; };
 		0AE44E2422F72CAD00514466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE44E2222F72CAD00514466 /* LaunchScreen.storyboard */; };
 		0AE44E2F22F72CAD00514466 /* RecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE44E2E22F72CAD00514466 /* RecipesTests.swift */; };
+		0AE44E3D22F7306B00514466 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE44E3C22F7306B00514466 /* CoreDataManager.swift */; };
+		0AE44E3F22F7318800514466 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE44E3E22F7318800514466 /* Models.swift */; };
+		0AE44E5322F74A2700514466 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE44E5222F74A2700514466 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +31,6 @@
 /* Begin PBXFileReference section */
 		0AE44E1322F72CAB00514466 /* Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE44E1622F72CAB00514466 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AE44E1822F72CAB00514466 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0AE44E1B22F72CAB00514466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AE44E1E22F72CAB00514466 /* Recipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Recipes.xcdatamodel; sourceTree = "<group>"; };
 		0AE44E2022F72CAD00514466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +39,9 @@
 		0AE44E2A22F72CAD00514466 /* RecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE44E2E22F72CAD00514466 /* RecipesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTests.swift; sourceTree = "<group>"; };
 		0AE44E3022F72CAD00514466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AE44E3C22F7306B00514466 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		0AE44E3E22F7318800514466 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		0AE44E5222F74A2700514466 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +83,10 @@
 		0AE44E1522F72CAB00514466 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				0AE44E5022F74A0300514466 /* UI */,
+				0AE44E3B22F7305B00514466 /* Storage */,
+				0AE44E3922F7302700514466 /* Models */,
 				0AE44E1622F72CAB00514466 /* AppDelegate.swift */,
-				0AE44E1822F72CAB00514466 /* ViewController.swift */,
 				0AE44E1A22F72CAB00514466 /* Main.storyboard */,
 				0AE44E2022F72CAD00514466 /* Assets.xcassets */,
 				0AE44E2222F72CAD00514466 /* LaunchScreen.storyboard */,
@@ -97,6 +103,38 @@
 				0AE44E3022F72CAD00514466 /* Info.plist */,
 			);
 			path = RecipesTests;
+			sourceTree = "<group>";
+		};
+		0AE44E3922F7302700514466 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AE44E3E22F7318800514466 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0AE44E3B22F7305B00514466 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				0AE44E3C22F7306B00514466 /* CoreDataManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		0AE44E5022F74A0300514466 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0AE44E5122F74A1D00514466 /* Home */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0AE44E5122F74A1D00514466 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0AE44E5222F74A2700514466 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +238,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AE44E1922F72CAB00514466 /* ViewController.swift in Sources */,
+				0AE44E5322F74A2700514466 /* HomeViewController.swift in Sources */,
 				0AE44E1722F72CAB00514466 /* AppDelegate.swift in Sources */,
+				0AE44E3F22F7318800514466 /* Models.swift in Sources */,
+				0AE44E3D22F7306B00514466 /* CoreDataManager.swift in Sources */,
 				0AE44E1F22F72CAB00514466 /* Recipes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  Recipes
 //
 //  Created by bartlomiej.guz on 04/08/2019.
@@ -8,13 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+final class HomeViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-
 }
-
